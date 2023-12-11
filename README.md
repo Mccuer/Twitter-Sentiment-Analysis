@@ -39,7 +39,7 @@ The model was trained with a variety of inputs. The highest accuracy seen was ab
 
 ## Results
 Prior to training and testing I wanted to gain a better idea of breakdown and sentiment of the dataset. There were 2 key questions that helped me gain this insight.
-**What is the breakdown of tweets in the dataset based on sentiment?*
+*What is the breakdown of tweets in the dataset based on sentiment?*
 
 The dataset was broken down by 4 catagories:
 * Positive
@@ -49,7 +49,7 @@ The dataset was broken down by 4 catagories:
 Since the Irrelivent catagory does not add much nuance to this analysis I dropped those rows. When I graphed the data it was clear the dataset was mostly evenly split. Although all catagories were close in amount of tweets, negative had slighly more, followed by positive and then nuetral. This makes sense considering that randomly scraped data should have a variety of sentiment. 
 ![Alt Text](https://github.com/Mccuer/Twitter-Sentiment-Analysis/blob/main/graph/Tweet_Sentiment_Breakdown_TrainingData.png)
 
-* *What topics are most frequent when tweets are broken down by sentiment?*
+*What topics are most frequent when tweets are broken down by sentiment?*
 * Positive Topics
 When looking at positive topics, there was one topic that stood out among the rest. Assasins Creed topped the list, which makes sense considering the loyal fan base that the game has. Four topics followed behind, all similarly discussed. these topics were the PS5, Borderlands, Red Dead Redemption, and Cyberpunk 2077. These topics share much in common. The main contributing factors are that they were released close to when the dataset was created, and that they were all very well revieved products.
 
@@ -61,8 +61,7 @@ Nuetral Topics seemed to be dominated by sporting based games, with Fifa, NBA 2k
 
 ![Alt Text](https://github.com/Mccuer/Twitter-Sentiment-Analysis/blob/main/graph/Topic-Breakdown-by-Sentiment.png)
 
-
-* *Testing Results*
+*Testing Results*
 When the model was tested against the validation data, in performed worse then expected. The biggest surprise was the drop in percision to 62%. When comparing this to the training data it is a stark difference. I believe the biggest downfall of the model comes from encoding, which could be limiting the power of the model.
 ![Alt Text](https://github.com/Mccuer/Twitter-Sentiment-Analysis/blob/main/graph/Testing-Result.png)
 
